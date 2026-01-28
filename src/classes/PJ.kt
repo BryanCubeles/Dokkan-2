@@ -4,7 +4,7 @@ class PJ {
     val id: Int
     val nombre: String
     val titulo: String
-    var psi: Int
+    var ps: Int
     var atq: Int
     var def: Int
     var ki: Int
@@ -16,11 +16,11 @@ class PJ {
     var tecnicaEspecial: TecnicaEspecial
     var habilidadLider: HabilidadLider
 
-    constructor(id: Int, nombre: String, titulo: String, psi: Int, atq: Int, def: Int){
+    constructor(id: Int, nombre: String, titulo: String, ps: Int, atq: Int, def: Int){
         this.id = id
         this.nombre = nombre
         this.titulo = titulo
-        this.psi = psi
+        this.ps = ps
         this.atq = atq
         this.def = def
         this.ki = 0
