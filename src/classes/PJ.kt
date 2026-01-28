@@ -16,7 +16,7 @@ class PJ {
     var tecnicaEspecial: TecnicaEspecial
     var habilidadLider: HabilidadLider
 
-    constructor(id: Int, nombre: String, titulo: String, ps: Int, atq: Int, def: Int){
+    constructor(id: Int, nombre: String, titulo: String, ps: Int, atq: Int, def: Int, tipo: Tipo, clase: Clase) {
         this.id = id
         this.nombre = nombre
         this.titulo = titulo
@@ -24,8 +24,8 @@ class PJ {
         this.atq = atq
         this.def = def
         this.ki = 0
-        this.clase = Clase.NINGUNA
-        this.tipo = Tipo.NINGUNA
+        this.clase = clase
+        this.tipo = tipo
         this.rareza = Rareza.UR
         this.categorias = mutableListOf()
         this.links = mutableListOf()
